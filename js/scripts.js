@@ -9,22 +9,24 @@ $(document).ready(function() {
     const climate = parseInt($("select#climate").val());
     const literature = parseInt($("select#literature").val());
 
-    if ((color + animal + food + climate + literature) >= 5 &&  (color + animal + food + climate + literature) <= 7 ) {
+    const sum = (color + animal + food + climate + literature)
+
+    if (sum >= 5 && sum <= 7 ) {
       $("#name-return").text(firstName);
       $("#ruby").fadeIn(500);
-    } else if ((color + animal + food + climate + literature) > 7 && (color + animal + food + climate + literature) <= 9 ) {
+    } else if (sum > 7 && sum <= 9 ) {
       $("#name-return").text(firstName);
       $("#csharp").fadeIn(500);
-    } else if ((color + animal + food + climate + literature) > 9 && (color + animal + food + climate + literature) <= 11 ) {
+    } else if (sum > 9 && sum <= 11 ) {
       $("#name-return").text(firstName);
       $("#javascript").fadeIn(500);
-    } else if ((color + animal + food + climate + literature) > 11 && (color + animal + food + climate + literature) <= 13 ) {
+    } else if (sum > 11 && sum <= 13 ) {
       $("#name-return").text(firstName);
       $("#go").fadeIn(500);
-    } else if ((color + animal + food + climate + literature) > 13 && (color + animal + food + climate + literature) <= 15 ) {
+    } else if (sum > 13 && sum <= 15 ) {
       $("#name-return").text(firstName);
       $("python").fadeIn(500);
-    } else if ((color + animal + food + climate + literature) > 15 && (color + animal + food + climate + literature) <= 17 ) {
+    } else if (sum > 15 && sum <= 17 ) {
       $("#name-return").text(firstName);
       $("#rust").fadeIn(500);
     } else {
