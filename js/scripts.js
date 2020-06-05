@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#name").submit(function(event) {
+  $("#next1").click(function(event) {
     event.preventDefault();
     const firstName = $("input#firstname").val();
     const lastName = $("input#lastname").val();
@@ -8,9 +8,9 @@ $(document).ready(function() {
     console.log(lastName);
   });
 
-  $("#color").submit(function(event) {
+  $("#next2").click(function(event) {
     event.preventDefault();
-    const color = $("#color").val();
+    const color = $("select#color").val();
     $("#q2").fadeIn(500);
     console.log(color);
   });
