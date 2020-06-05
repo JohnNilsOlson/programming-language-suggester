@@ -20,15 +20,17 @@
           <form id ="survey">
             <div class="row">
             <h3>Let's start simple.  What is your name?</h3>
-              <div class="form-group">
-                <label for="firstname">Your first name? <label>
-                <input id="firstname" class="form-control" type="text">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="firstname">Your first name? <label>
+                  <input id="firstname" class="form-control" type="text">
+                  </div>
+                <div class="form-group">
+                  <label for="lastname">Your last name? <label>
+                  <input id="lastname" class="form-control" type="text">
+                </div>
+                <button type="button" class="btn" id="next1">Next</button>
               </div>
-              <div class="form-group">
-                <label for="lastname">Your last name? <label>
-                <input id="lastname" class="form-control" type="text">
-              </div>
-              <button type="button" class="btn" id="next1">Next</button>
             </div>
             <div class="row" target="hidden" id="q1">
             <h3>Of the primary colors, which do you most indentify with?</h3>
@@ -94,7 +96,7 @@
               </div>
             </div>
           </form>    
-        </div>
+        
         <div class="col-md-6">
           <div target="hidden" id="ruby">
             <h3 id="name-return">!<h3>
