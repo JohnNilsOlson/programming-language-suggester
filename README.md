@@ -1,21 +1,30 @@
-# Project Title
+# Programming Language Suggestor
+June 5th, 2020.
 
 ## Project Description
-Description.
+Application of continuing lessons in html, css, bootstrap, JavaScript and jQuery.
 
 ## Contributors
 JohnNils Olson
 
 ## Usage
-Program usage.
+A survery website designed to help prospective coding students choose a path.
 
 ## Technologies Used
-Technologies used.
+html  
+CSS  
+bootstrap  
+JavaScript  
+jQuery
 
 ## Installation Instructions
-* Cloning instructions.
+* Visit https://johnnilsolson.github.io/programming-language-suggestor.
 
-* Download instructions.
+or
+
+* Clone repository at https://github.com/JohnNilsOlson/programming-language-suggestor.
+
+* Open index.html with web broswer of choice.
 
 ## Bugs
 No known issues.
