@@ -14,4 +14,25 @@ $(document).ready(function() {
     $("#q2").fadeIn(500);
     console.log(color);
   });
+
+  $("#next3").click(function(event) {
+    event.preventDefault();
+    const color = $("select#color").val();
+    $("#q2").fadeIn(500);
+    console.log(color);
+  });
+
+  $("#next4").click(function(event) {
+    event.preventDefault();
+    const color = $("select#color").val();
+    $("#q2").fadeIn(500);
+    console.log(color);
+  });
+
+  $("#next2").click(function(event) {
+    event.preventDefault();
+    const color = $("select#color").val();
+    $("#q2").fadeIn(500);
+    console.log(color);
+  });
 });
