@@ -3,7 +3,7 @@
   height: 200px;
 }
 
-#hidden1 {
+div[target] {
   display:none;
 }
 
