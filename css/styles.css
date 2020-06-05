@@ -2,3 +2,14 @@
   margin-top: 20px;
   height: 200px;
 }
+
+#hidden1 {
+  display:none;
+}
+
+h3 {
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: lightgray;
+  padding: 5px;
+}
