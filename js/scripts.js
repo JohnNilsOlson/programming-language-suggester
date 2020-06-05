@@ -2,15 +2,13 @@ $(document).ready(function() {
   $("#survey").submit(function(event) {
     event.preventDefault();
     $("body").scrollTop(0);
-    const firstName = $("input#firstname").val();
-    const lastName = $("input#lastname").val();
-    const color = parseInt($("select#color").val());
-    const animal = parseInt($("select#animal").val());
-    const food = parseInt($("select#food").val())
-    const climate = parseInt($("select#climate").val());
-    const literature = parseInt($("select#literature").val());
-
-    const sum = (color + animal + food + climate + literature)
+  const firstName = $("input#firstname").val();
+  const color = parseInt($("select#color").val());
+  const animal = parseInt($("select#animal").val());
+  const food = parseInt($("select#food").val())
+  const climate = parseInt($("select#climate").val());
+  const literature = parseInt($("select#literature").val());
+  const sum = (color + animal + food + climate + literature)
 
     if (sum >= 5 && sum <= 7 ) {
       $("#name-return").text(firstName);
@@ -36,34 +34,28 @@ $(document).ready(function() {
     }
   });  
 
-  $("#next1").click(function(event) {
-    event.preventDefault();
+  $("#next1").click(function() {
     $("#q1").fadeIn(500);
-    $(window).scrollTop(0);
     $("body").scrollTop(300);
   });
 
-  $("#next2").click(function(event) {
-    event.preventDefault();
+  $("#next2").click(function() {
     $("#q2").fadeIn(500);
-    $("body").scrollTop(300);
+    $("body").scrollTop(600);
   });
 
-  $("#next3").click(function(event) {
-    event.preventDefault();
+  $("#next3").click(function() {
     $("#q3").fadeIn(500);
-    $("body").scrollTop(300);
+    $("body").scrollTop(900);
   });
 
-  $("#next4").click(function(event) {
-    event.preventDefault();
+  $("#next4").click(function() {
     $("#q4").fadeIn(500);
-    $("body").scrollTop(300);
+    $("body").scrollTop(1200);
   });
 
-  $("#next5").click(function(event) {
-    event.preventDefault();
+  $("#next5").click(function() {
     $("#q5").fadeIn(500);
-    $("body").scrollTop(300);
+    $("body").scrollTop(1500);
   });
 });
