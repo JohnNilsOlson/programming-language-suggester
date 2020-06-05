@@ -17,9 +17,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="row">
-          <h3>Let's start simple.  What is your name?</h3>
-            <form id="name">
+          <form id ="survey">
+            <div class="row">
+            <h3>Let's start simple.  What is your name?</h3>
               <div class="form-group">
                 <label for="firstname">Your first name? <label>
                 <input id="firstname" class="form-control" type="text">
@@ -27,13 +27,11 @@
               <div class="form-group">
                 <label for="lastname">Your last name? <label>
                 <input id="lastname" class="form-control" type="text">
-                <button type="button" class="btn" id="next1">Next</button>
-                </div>
-            </form>
-          </div>
-          <div class="row" target="hidden" id="q1">
-          <h3>Of the primary colors, which do you most indentify with?</h3>
-            <form id="color-indentity">
+              </div>
+              <button type="button" class="btn" id="next1">Next</button>
+            </div>
+            <div class="row" target="hidden" id="q1">
+            <h3>Of the primary colors, which do you most indentify with?</h3>
               <div class="col-md-12">
                 <select class="form-control" id="color">
                   <option value="1">Red</option>
@@ -43,11 +41,9 @@
                 <br>
                 <button type="button" class="btn" id="next2">Next</button>
               </div>
-            </form>
-          </div>
-          <div class="row" target="hidden" id="q2">
-          <h3>Which animal do you most indentify with?</h3>
-            <form id="animal-identity">
+            </div>
+            <div class="row" target="hidden" id="q2">
+            <h3>Which animal do you most indentify with?</h3>
               <div class="col-md-12">
                 <select class="form-control" id="animal">
                   <option value="1">Grizzly Bear</option>
@@ -57,11 +53,9 @@
                 </select><br>
                 <button type="button" class="btn" id="next3">Next</button>
               </div>
-            </form>
-          </div>
-          <div class="row" target="hidden" id="q3">
-          <h3>Which food would you prefer to eat?</h3>
-            <form id="food choice">
+            </div>
+            <div class="row" target="hidden" id="q3">
+            <h3>Which food would you prefer to eat?</h3>
               <div class="col-md-12">
                 <select class="form-control" id="food">
                   <option value="1">Pizza</option>
@@ -71,11 +65,9 @@
                 </select><br>
                 <button type="button" class="btn" id="next4">Next</button>
               </div>
-            </form>
-          </div>
-          <div class="row" target="hidden" id="q4">
-          <h3>In what climate would you most like to live?</h3>
-            <form id="climate-choice">
+            </div>
+            <div class="row" target="hidden" id="q4">
+            <h3>In what climate would you most like to live?</h3>
               <div class="col-md-12">
                 <select class="form-control" id="climate">
                   <option value="1">Tropical</option>
@@ -86,26 +78,28 @@
                 </select><br>
                 <button type="button" class="btn" id="next5">Next</button>
               </div>
-            </form>
-          </div>
-          <div class="row" target="hidden" id="q5">
-          <h3>Which type of literature would you most like to read?</h3>
-            <form id="literature-choice">
+            </div>
+            <div class="row" target="hidden" id="q5">
+            <h3>Which type of literature would you most like to read?</h3>
               <div class="col-md-12">
                 <select class="form-control" id="literature">
                   <option value="1">Fiction</option>
                   <option value="2">Non-fiction</option>
                 </select><br>
-                <button type="submit" class="btn" id="submit">Submit Answers!</button>
               </div>
-            </form>
-          </div>   
+            </div>
+            <div class="row" target="hidden" id="q6"></div>
+              <div class="col-md-12">
+                <button type="submit" class="btn">Submit Answers!</button>
+              </div>
+            </div>
+          </form> 
         </div>
-<!-- BUILD RESPONSES HERE
-        <div class="col-md-6">
 
-        </div>
---> 
+        <div class="col-md-6" target="hidden" id="results">
+          <h3 id="name-return!"><h3>
+          <h3>You might consider tyring:<h3>
+        </div> 
     </div>
   </body>
 </html>
