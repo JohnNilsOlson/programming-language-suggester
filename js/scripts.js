@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $("#survey").submit(function(event) {
     event.preventDefault();
+    $("body").scrollTop(0);
     const firstName = $("input#firstname").val();
     const lastName = $("input#lastname").val();
     const color = parseInt($("select#color").val());
@@ -25,7 +26,7 @@ $(document).ready(function() {
       $("#go").fadeIn(500);
     } else if (sum > 13 && sum <= 15 ) {
       $("#name-return").text(firstName);
-      $("python").fadeIn(500);
+      $("#python").fadeIn(500);
     } else if (sum > 15 && sum <= 17 ) {
       $("#name-return").text(firstName);
       $("#rust").fadeIn(500);
@@ -33,32 +34,36 @@ $(document).ready(function() {
       $("#name-return").text(firstName);
       $("#swift").fadeIn(500);
     }
-
   });  
 
   $("#next1").click(function(event) {
     event.preventDefault();
     $("#q1").fadeIn(500);
+    $(window).scrollTop(0);
+    $("body").scrollTop(300);
   });
 
   $("#next2").click(function(event) {
     event.preventDefault();
     $("#q2").fadeIn(500);
+    $("body").scrollTop(300);
   });
 
   $("#next3").click(function(event) {
     event.preventDefault();
     $("#q3").fadeIn(500);
+    $("body").scrollTop(300);
   });
 
   $("#next4").click(function(event) {
     event.preventDefault();
     $("#q4").fadeIn(500);
+    $("body").scrollTop(300);
   });
 
   $("#next5").click(function(event) {
     event.preventDefault();
     $("#q5").fadeIn(500);
+    $("body").scrollTop(300);
   });
-
 });
