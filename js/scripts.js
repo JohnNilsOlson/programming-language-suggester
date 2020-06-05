@@ -29,9 +29,16 @@ $(document).ready(function() {
     console.log(food);
   });
 
-  $("#submit").submit(function(event) {
+  $("#next5").click(function(event) {
     event.preventDefault();
     const climate = $("select#climate").val();
+    $("#q5").fadeIn(500);
     console.log(climate);
+  });
+
+  $("#submit").submit(function(event) {
+    event.preventDefault();
+    const literature = $("select#literature").val();
+    console.log(literature);
   });
 });
