@@ -7,10 +7,6 @@ div[target] {
   display:none;
 }
 
-.container {
-  margin-bottom: 20px;
-}
-
 h3 {
   border-left-width: 5px;
   border-left-style: solid;
