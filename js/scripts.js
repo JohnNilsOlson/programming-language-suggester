@@ -61,9 +61,4 @@ $(document).ready(function() {
     $("#q5").fadeIn(500);
   });
 
-  $("#next6").click(function(event) {
-    event.preventDefault();
-    $("#q6").fadeIn(500);
-  }); 
-
 });
