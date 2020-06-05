@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $("#survey").submit(function(event) {
+    event.preventDefault();
     const firstName = $("input#firstname").val();
     const lastName = $("input#lastname").val();
     const color = parseInt($("select#color").val());
@@ -8,8 +9,27 @@ $(document).ready(function() {
     const climate = parseInt($("select#climate").val());
     const literature = parseInt($("select#literature").val());
 
-    if ((color + animal + food + climate + literature) >= 0) {
+    if ((color + animal + food + climate + literature) >= 5 &&  (color + animal + food + climate + literature) <= 7 ) {
       $("#name-return").text(firstName);
+      $("#ruby").fadeIn(500);
+    } else if ((color + animal + food + climate + literature) > 7 && (color + animal + food + climate + literature) <= 9 ) {
+      $("#name-return").text(firstName);
+      $("#csharp").fadeIn(500);
+    } else if ((color + animal + food + climate + literature) > 9 && (color + animal + food + climate + literature) <= 11 ) {
+      $("#name-return").text(firstName);
+      $("#javascript").fadeIn(500);
+    } else if ((color + animal + food + climate + literature) > 11 && (color + animal + food + climate + literature) <= 13 ) {
+      $("#name-return").text(firstName);
+      $("#go").fadeIn(500);
+    } else if ((color + animal + food + climate + literature) > 13 && (color + animal + food + climate + literature) <= 15 ) {
+      $("#name-return").text(firstName);
+      $("python").fadeIn(500);
+    } else if ((color + animal + food + climate + literature) > 15 && (color + animal + food + climate + literature) <= 17 ) {
+      $("#name-return").text(firstName);
+      $("#rust").fadeIn(500);
+    } else {
+      $("#name-return").text(firstName);
+      $("#swift").fadeIn(500);
     }
 
   });  
