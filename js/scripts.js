@@ -17,22 +17,21 @@ $(document).ready(function() {
 
   $("#next3").click(function(event) {
     event.preventDefault();
-    const color = $("select#color").val();
-    $("#q2").fadeIn(500);
-    console.log(color);
+    const animal = $("select#animal").val();
+    $("#q3").fadeIn(500);
+    console.log(animal);
   });
 
   $("#next4").click(function(event) {
     event.preventDefault();
-    const color = $("select#color").val();
-    $("#q2").fadeIn(500);
-    console.log(color);
+    const food = $("select#food").val();
+    $("#q4").fadeIn(500);
+    console.log(food);
   });
 
-  $("#next2").click(function(event) {
+  $("#submit").submit(function(event) {
     event.preventDefault();
-    const color = $("select#color").val();
-    $("#q2").fadeIn(500);
-    console.log(color);
+    const climate = $("select#climate").val();
+    console.log(climate);
   });
 });
