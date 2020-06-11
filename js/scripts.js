@@ -2,13 +2,13 @@ $(document).ready(function() {
   $("#survey").submit(function(event) {
     event.preventDefault();
     $("body").scrollTop(0);
-  const firstName = $("input#firstname").val();
-  const color = parseInt($("select#color").val());
-  const animal = parseInt($("select#animal").val());
-  const food = parseInt($("select#food").val())
-  const climate = parseInt($("select#climate").val());
-  const literature = parseInt($("select#literature").val());
-  const sum = (color + animal + food + climate + literature)
+    const firstName = $("input#firstname").val();
+    const color = parseInt($("select#color").val());
+    const animal = parseInt($("select#animal").val());
+    const food = parseInt($("select#food").val())
+    const climate = parseInt($("select#climate").val());
+    const literature = parseInt($("select#literature").val());
+    const sum = (color + animal + food + climate + literature)
 
     if (sum >= 5 && sum <= 7 ) {
       $("#name-return").text(firstName);
