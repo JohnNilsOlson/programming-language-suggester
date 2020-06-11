@@ -1,6 +1,8 @@
 $(document).ready(function() {
   $("#survey").submit(function(event) {
     event.preventDefault();
+    $("#hide").show();
+    $("#show").hide();
     $("body").scrollTop(0);
     const firstName = $("input#firstname").val();
     const color = parseInt($("select#color").val());
@@ -57,5 +59,9 @@ $(document).ready(function() {
   $("#next5").click(function() {
     $("#q5").fadeIn(500);
     $("body").scrollTop(1500);
+  });
+
+  $("#reload").click(function() {
+    location.reload(true);
   });
 });

@@ -7,6 +7,15 @@ div[target] {
   display:none;
 }
 
+#hide {
+  display:none;
+  float: right;
+}
+
+#show {
+  float: left;
+}
+
 h3 {
   border-left-width: 5px;
   border-left-style: solid;

@@ -16,7 +16,7 @@
     </div>  
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" id="show">
           <form id ="survey">
             <div class="row">
             <h3>Let's start simple.  What is your name?</h3>
@@ -94,8 +94,8 @@
             </div>  
           </form>
         </div>
-        <div class="col-md-6">
-          <div target="hidden" id="ruby">
+        <div class="col-md-6" id="hide">
+          <div id="ruby">
             <h3 id="name-return">!</h3>
             <h3>You might consider tyring:</h3>
             <h1>Ruby!</h1>
@@ -137,6 +137,7 @@
             <h1>Swift!</h1>
             <p>Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. for iOS, iPadOS, macOS, watchOS, tvOS, and Linux. Swift is designed to work with Apple's Cocoa and Cocoa Touch frameworks and the large body of existing Objective-C code written for Apple products. It is built with the open source LLVM compiler framework and has been included in Xcode since version 6, released in 2014. On Apple platforms,[11] it uses the Objective-C runtime library which allows C, Objective-C, C++ and Swift code to run within one program.</p>
           </div>
+          <button type="button" class="btn" id="reload">Try again?</button>
         </div>
       </div> 
     </div>
